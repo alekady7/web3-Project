@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hackathon</title>
+  </head>
+  <style>
+    body {
+      /* background-color: rgb(148, 40, 190); */
+      font-family: "Calisto MT";
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      padding: 50px;
+    }
+
+    .text {
+      font-size: 5.5rem;
+      color: rgb(224, 67, 255);
+    }
+
+    .img {
+      padding: 10px;
+      margin-left: 30px;
+      margin-top: 20px;
+    }
+    .tilesWrap {
+      padding: 0;
+      margin: 50px auto;
+      list-style: none;
+      text-align: center;
+    }
+    .tilesWrap li {
+      display: inline-block;
+      width: 20%;
+      min-width: 200px;
+      max-width: 200px;
+      padding: 55px 20px 40px;
+      position: relative;
+      vertical-align: top;
+      margin: 10px 10px 0 2px;
+      font-family: "helvetica", san-serif;
+      min-height: 25vh;
+      background: #8ad6ea;
+      color: black;
+      border-radius: 5px;
+      box-shadow: 10px 10px 10px rgb(148, 148, 148);
+      /* border: 1px solid #252727; */
+      text-align: left;
+    }
+    .tilesWrap li h2 {
+      font-size: 114px;
+      margin: 0;
+      position: absolute;
+      opacity: 0.2;
+      top: 50px;
+      right: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+    .tilesWrap li h3 {
+      font-size: 20px;
+      color: #af3e02;
+      margin-bottom: 5px;
+    }
+    .tilesWrap li p {
+      font-size: 16px;
+      line-height: 18px;
+      color: #333131;
+      margin-top: 5px;
+    }
+    .tilesWrap li button {
+      background: transparent;
+      border: 1px solid #b7b7b7;
+      padding: 10px 20px;
+      color: #b7b7b7;
+      border-radius: 3px;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-40px);
+      opacity: 0;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .tilesWrap li button:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 120%;
+      background: #b7b7b7;
+      top: 0;
+      opacity: 0;
+      left: -140px;
+      border-radius: 0 20px 20px 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+    .tilesWrap li:hover button {
+      transform: translateY(5px);
+      opacity: 1;
+    }
+    .tilesWrap li button:hover {
+      color: #262a2b;
+    }
+    .tilesWrap li button:hover:before {
+      left: 0;
+      opacity: 1;
+    }
+    .tilesWrap li:hover h2 {
+      top: 0px;
+      opacity: 0.6;
+    }
+
+    .tilesWrap li:before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      right: -2px;
+      bottom: -2px;
+      z-index: -1;
+      background: #fff;
+      transform: skew(2deg, 2deg);
+    }
+    .tilesWrap li:after {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .team {
+      font-size: 3rem;
+      margin-left: 80px;
+      padding: 10px;
+      color: rgb(140, 27, 110);
+    }
+    span {
+      color: #4b2257;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="text">
+        <h2><span>Welcome</span> Hackathon</h2>
+        <h3>Team: DKode</h3>
+      </div>
+      <div class="img">
+        <img
+          src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg"
+          height="500vh"
+          width="510vw"
+        />
+      </div>
+    </div>
+    <h3 class="team">My TEAM</h3>
+    <ul class="tilesWrap">
+      <li>
+        <h2>01</h2>
+        <h3>Dhruva(team leader)</h3>
+        <p>web dev</p>
+        <p>ph:9625147825</p>
+        <p>reg-1200253</p>
+        <p class="pp">dhruuva24@gmail.com</p>
+      </li>
+      <li>
+        <h2>02</h2>
+        <h3>Khushi</h3>
+        <p>web dev</p>
+        <p>ph:9625147825</p>
+        <p>reg-12001258</p>
+        <p class="pp">khusi234@gmail.com</p>
+      </li>
+      <li>/
+        <h2>03</h2>
+        <h3>Sourav</h3>
+        <p>web dev</p>
+        <p>ph:9625147825</p>
+        <p>reg-12002369</p>
+        <p class="pp">sourav004@gmail.com</p>
+      </li>
+      <li>
+        <h2>04</h2>
+        <h3>Aditya</h3>
+        <p>web dev</p>
+        <p>ph:9625147825</p>
+        <p>reg-12369584</p>
+        <p class="pp">aditya234@gmail.com</p>
+      </li>
+      <li>
+        <h2>05</h2>
+        <h3>Bibhas</h3>
+        <p>web dev</p>
+        <p>ph:9625147825</p>
+        <p>reg-1202577</p>
+        <p class="pp">bibhas2366@gmail.com</p>
+      </li>
+    </ul>
+  </body>
+</html>
